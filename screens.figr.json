@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "device": "desktop",
+  "root": { "route": "/" },
+  "sections": [
+    { "id": "plan", "name": "Plan & optimize" },
+    { "id": "learn", "name": "Learn" }
+  ],
+  "screens": {
+    "scr_home": { "name": "Home", "route": "/", "section": "plan", "state": {} },
+    "scr_planner": { "name": "Meal Planner", "route": "/planner", "section": "plan", "state": {} },
+    "scr_planner_empty": { "name": "Meal Planner – empty", "route": "/planner", "section": "plan", "state": { "empty": true } },
+    "scr_visualization": { "name": "DP Visualization", "route": "/visualization", "section": "plan", "state": {} },
+    "scr_visualization_done": { "name": "DP Visualization – traceback", "route": "/visualization", "section": "plan", "state": { "step": "end" } },
+    "scr_results": { "name": "Results", "route": "/results", "section": "plan", "state": {} },
+    "scr_results_empty": { "name": "Results – no meals", "route": "/results", "section": "plan", "state": { "empty": true } },
+    "scr_algorithm": { "name": "Algorithm", "route": "/algorithm", "section": "learn", "state": {} },
+    "scr_complexity": { "name": "Complexity", "route": "/complexity", "section": "learn", "state": {} },
+    "scr_challenge": { "name": "Challenge", "route": "/challenge", "section": "learn", "state": {} }
+  },
+  "edges": [],
+  "layers": []
+}
